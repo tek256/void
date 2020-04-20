@@ -4,7 +4,7 @@
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
 
-  <meta property="og:site_name" content="{{ $siteTitle }}"
+  <meta property="og:site_name" content="{{ $siteTitle }}">
 
 	{{- if .IsHome -}}
 	<title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }} | {{ .Site.Params.SubTitle }}{{ end }}</title>
