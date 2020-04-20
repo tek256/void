@@ -11,6 +11,7 @@
   <meta property="og:title" content="{{ $title }}">
 	{{- else -}}
 	<title>{{ $title }} | {{ $siteTitle }}</title>
+  <meta property="og:title" content="{{ $title }} | {{ $siteTitle }}">
 	{{- end -}}
 
   <meta property="og:description" content="{{ .Description }}">
