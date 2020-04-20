@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-p {
+p {
   color: #eee;
 }
 
@@ -253,8 +253,8 @@ footer .footer_cpy {
   text-align: center;
 }
 
-
 /* --- Pagination --- */
+
 .pagination {
   display: inline;
 }
@@ -279,6 +279,25 @@ table, th, td {
 /* --- Code Styling --- */
 pre {
   font-size: 1.3rem;
+}
+
+/* --- Custom Menu Hider (used in FAQ) --- */
+.menu_label {
+	cursor: pointer;
+	color: #fb222d;
+	font-size: 1.5rem !important;
+}
+
+.menu_label:hover {
+	text-decoration: underline;
+}
+
+.menu_trigger, .menu_content {
+	display: none;
+}
+
+.menu_trigger:checked ~ .menu_content{
+	display: block;
 }
 
 /* --- Open Sans Font --- */
