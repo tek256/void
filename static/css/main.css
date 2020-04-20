@@ -46,18 +46,15 @@ p {
 
 .post_listed .post_time {
   color: #eee;
-  margin-left: 3px;
 }
 
 .post_listed .description {
   font-size: 1.3rem;
   color: #777;
-  margin-left: 3px;
 }
 
 .post_listed .post_link {
   font-size: 1.5rem;
-  margin-left: 3px;
 }
 
 /* --- Header Styling --- */ 
@@ -254,6 +251,20 @@ footer .footer_cpy {
   font-size: 0.9rem;
   color: #444;
   text-align: center;
+}
+
+
+/* --- Pagination --- */
+.pagination {
+  display: inline;
+}
+
+.page-prev {
+  float: left;
+}
+
+.page-next {
+  float: right;
 }
 
 /* --- Table styling --- */
