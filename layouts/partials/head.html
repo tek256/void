@@ -1,5 +1,4 @@
-<header>
-	<div class="header_main">
+<div class="header_main">
 	<a href="{{ .Site.BaseURL }}">
 		{{- if isset .Site.Params "header_icon" -}}
     <img class="header_img" src="{{ .Site.BaseURL }}/{{ .Site.Params.header_icon }}" alt="header_icon"/>
@@ -18,5 +17,4 @@
 			<a href="{{ .URL }}">{{ .Name }}</a>
 		{{ end }}
 	</nav>
-	</div>
-</header>
+</div>

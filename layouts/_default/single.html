@@ -8,7 +8,7 @@
   <article>
 		<div class="title_wrapper">
 			<h1 class="title">{{ .Title }}</h1>
-			<div class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+      <div class="meta"><time class="post_time">{{ dateFormat "Jan 2, 2006" .Date }}</time>{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
 		</div>
 		<div>
 			{{ if isset .Params "tldr" }}
