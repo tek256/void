@@ -28,6 +28,10 @@ p {
   padding: 0;
 }
 
+.wrapper img {
+  max-width: 100%;
+}
+
 /* --- Index Styling --- */
 .post_listed {
   width: 100%;
