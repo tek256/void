@@ -3,13 +3,19 @@
   
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
+
+  <meta property="og:site_name" content="{{ $siteTitle }}"
+
 	{{- if .IsHome -}}
 	<title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }} | {{ .Site.Params.SubTitle }}{{ end }}</title>
-  <meta property="og:title" content="{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }} | {{ .Site.Params.SubTitle }}{{ end }}">
+  <meta property="og:title" content="{{ $title }}">
 	{{- else -}}
 	<title>{{ $title }} | {{ $siteTitle }}</title>
-  <meta property="og:title" content="{{ $title }} | {{ $siteTitle }}">
 	{{- end -}}
+
+  <meta property="og:description" content="{{ .Description }}">
+  <meta property="og:type" content="blog">
+  <meta property="og:link" content="{{ .Permalink }}">
 
   {{- if isset .Site.Params "theme_color" }}
   <meta name="theme-color" content="{{ .Site.Params.theme_color }}">
