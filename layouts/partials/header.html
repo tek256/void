@@ -17,9 +17,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="{{ .Site.Params.theme_color }}">
   {{- end -}}
 
-	{{- if isset .Site.Params "favicon" -}}
-	<link rel="shortcut icon" type="image/png" href={{ .Site.Params.favicon }} />
-  <meta property="og:image" content="{{ .Site.Params.favicon }}" />
+	{{- if isset .Site.Params "site_icon" -}}
+	<link rel="shortcut icon" type="image/png" href={{ .Site.Params.site_icon }} />
+  <meta property="og:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.site_icon }}" />
 	{{- end -}}
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
