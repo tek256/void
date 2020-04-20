@@ -2,11 +2,11 @@
 <html>
 {{ partial "header.html" . }}
 <body>
+  <div class="wrapper">
 	<div class="content">
 		{{ partial "head.html" . }}
-<main>
-<article>
-		<div class="title">
+  <article>
+		<div class="title_wrapper">
 			<h1 class="title">{{ .Title }}</h1>
 			<div class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
 		</div>
@@ -25,20 +25,20 @@
 		<div class="post-tags">
 			{{ if ne .Type "page" }}
 				{{ if gt .Params.tags 0 }}
-					<nav class="nav tags">
-							<ul class="tags">
-								{{ range .Params.tags }}
-								<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-								{{ end }}
-							</ul>
-					</nav>
+					<ul class="tags">
+						{{ range .Params.tags }}
+						<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+						{{ end }}
+					</ul>
 				{{ end }}
 			{{ end }}
-
-	    {{ partial "post_footer.html" . }}
 		</div>
-		
-	{{ partial "footer.html" . }}
+  </article>
 	</div>
+
+	{{ partial "post_footer.html" . }}
+
+	{{ partial "footer.html" . }}
+  </div>
 </body>
 </html>

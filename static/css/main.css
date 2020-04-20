@@ -1,1 +1,251 @@
 /* Well, there's gonna be something here soon, I promise. */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a0a0a;
+  border: 0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #fb222d; 
+  text-decoration: none;
+}
+
+p {
+  color: #eee;
+}
+
+/* --- General Document style --- */
+.wrapper {
+  max-width: 640px;
+  width: 90%;
+  margin: 0 auto 45px auto;
+  padding: 0;
+}
+
+/* --- Index Styling --- */
+.post_listing {
+  width: 100%;
+}
+
+.post_listed .title {
+  width: 100%;
+  text-align: left;
+  display: block;
+  line-height: 1.4;
+  font-size: 2.3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.post_listed .post_time {
+  color: #eee;
+  margin-left: 3px;
+}
+
+.post_listed .description {
+  font-size: 1.3rem;
+  color: #777;
+  margin-left: 3px;
+}
+
+.post_listed .post_link {
+  font-size: 1.5rem;
+  margin-left: 3px;
+}
+
+/* --- Header Styling --- */ 
+.header_main {
+  max-width: 400px;
+  margin: 45px auto 35px auto;
+  width: 90%;
+}
+
+.header_main a {
+  text-decoration: none;
+}
+
+.header_img {
+  float: left;
+  margin-right: 20px;
+  padding: 0;
+  width: 64px;
+  height: 64px;
+  display: block;
+}
+
+.header_title {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  margin: 20px auto 0 auto;
+  padding-top: 25px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 12px;
+  font-size: 1.5rem;
+}
+
+nav a:visited {
+  color: #fff; 
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+/* --- Post Titling --- */
+
+.title_wrapper {
+  width: 100%;
+  margin: 5px auto 25px auto;
+}
+
+.title_wrapper .title {
+  font-size: 3rem;
+  display: block;
+  line-height: 1.4;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  color: #fb222d;
+  padding-bottom: 10px;
+}
+
+.title_wrapper .meta {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  color: #999;
+}
+
+.title_wrapper .meta:hover {
+  color: #fb222d;
+  text-decoration: underline;
+}
+
+/* --- Post Content --- */
+
+.body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.body p {
+  margin-bottom: 30px;
+}
+
+/* --- Post Tags --- */
+.post-tags {
+  text-align: center;
+}
+
+.tags {
+  display: block;
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.tags li {
+  margin-right: 7px;
+  list-style: none;
+  display: inline-block;
+}
+
+.tags li a {
+  line-height: 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  float: left;
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px 3px 6px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+/* --- Post Footer --- */
+.post_footer hr {
+  color: none;
+  border-top: 1px solid #222;
+}
+
+.post_footer {
+  width: 100%;
+  min-height: 75px;
+  display: block;
+  margin: 25px auto 45px auto;
+  padding: 25px auto auto 10px;
+}
+
+.post_footer .footer_icon {
+  width: auto;
+  height: 100px;
+  float: left;
+  display: inline-block;
+  border-radius: 6px;
+  margin: auto 25px auto 10px;
+}
+
+.post_footer .footer_author {
+  width: auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.post_footer .footer_desc {
+  width: auto;
+  font-size: 1.25rem;
+  text-align: left;
+  color: #999;
+}
+
+.post_footer .footer_links {
+  margin-left: 100px;
+}
+
+.post_footer .footer_links a {
+  font-size: 1.25rem;
+  margin: 0 7px 0 0;
+}
+
+/* --- Page Footer --- */
+
+footer {
+  width: 100%;
+  margin-top: 25px;
+}
+
+footer .footer_msg {
+  font-size: 1.1rem;
+  color: #eee;
+  text-align: center;
+}
+
+footer .footer_cpy {
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+}

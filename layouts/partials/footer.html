@@ -1,6 +1,6 @@
 <footer>
-  <p class="footer_cpy">All Rights Reserved {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} </p>
 {{- if isset .Site.Params "footer_msg" -}}
   <p class="footer_msg">{{ .Site.Params.footer_msg }}</p>
 {{- end -}}
+  <p class="footer_cpy">All Rights Reserved {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} </p>
 </footer>

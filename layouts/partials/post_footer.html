@@ -1,10 +1,10 @@
 <div class="post_footer">
-    <hr class="post_footer_top">
+    <hr>
     {{- if isset .Site.Params "footer_icon" -}}
-    <a href="{{ .Site.BaseURL }}"><img class="footer_icon" alt="footer_icon" src="{{ .Site.Params.footer_icon }}" /></a>
+    <a href="{{ .Site.BaseURL }}"><img class="footer_icon" alt="footer_icon" src="{{ .Site.BaseURL }}/{{ .Site.Params.footer_icon }}" /></a>
     {{- end -}} 
     {{- if isset .Site.Params "footer_author" -}}
-    <a href="{{ .Site.BaseURL }}">{{ .Site.Params.footer_author }}</a>
+    <a class="footer_author" href="{{ .Site.BaseURL }}">{{ .Site.Params.footer_author }}</a>
     {{- end -}}
     {{- if isset .Site.Params "footer_desc" -}}
     <p class="footer_desc">{{ .Site.Params.footer_desc }}</p>
@@ -14,5 +14,4 @@
 			<a class="footer_link" href="{{ .URL }}">{{ .Name }}</a>
 		{{ end }}
     </div>
-    <hr class="post_footer_bottom">
 </div>
