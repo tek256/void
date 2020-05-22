@@ -103,7 +103,8 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
-  padding-right: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
   font-size: 1.5rem;
 }
 
