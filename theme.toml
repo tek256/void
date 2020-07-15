@@ -11,6 +11,6 @@ features = ["blog", "Clean", "Dark"]
 min_version = "0.41.0"
 
 [author]
-  name = "Devon"
+  name = "Devon (tek256)"
   homepage = "https://tek256.com/"
 

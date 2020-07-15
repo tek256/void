@@ -20,6 +20,10 @@ p {
   color: #eee;
 }
 
+article a {
+  text-decoration: underline;
+} 
+
 /* --- General Document style --- */
 .wrapper {
   max-width: 640px;
@@ -263,6 +267,12 @@ footer .footer_msg {
 footer .footer_cpy {
   font-size: 0.9rem;
   color: #444;
+  text-align: center;
+}
+
+footer .footer_rss {
+  font-size: 0.9rem;
+  color: #666;
   text-align: center;
 }
 
