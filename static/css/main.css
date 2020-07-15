@@ -274,6 +274,7 @@ footer .footer_rss {
   font-size: 0.9rem;
   color: #666;
   text-align: center;
+  display: block;
 }
 
 /* --- Pagination --- */
