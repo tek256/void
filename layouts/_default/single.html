@@ -6,41 +6,25 @@
 	<div class="content">
 		{{ partial "head.html" . }}
   <article>
+    {{- if (not (isset .Params "hide_title")) -}}
 		<div class="title_wrapper">
 			<h1 class="title">{{ .Title }}</h1>
-      <div class="meta">
         {{- if (not (isset .Params "hide_date")) -}}
-        <time class="post_time">{{ dateFormat "Jan 2, 2006" .Date }}</time>
+        <p class="single_time">{{ dateFormat "Jan 2, 2006" .Date }}</p>
         {{- end -}}
-        {{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
 		</div>
-		<div>
-			{{ if isset .Params "tldr" }}
-						<div class="tldr">
-							<strong>tl;dr:</strong>
-							{{ .Params.tldr }}
-  						</div>{{ end }}
-		</div>
+		{{ if isset .Params "tldr" }}
+			<div class="tldr">
+			<strong>tl;dr:</strong>
+			  {{ .Params.tldr }}
+  		</div>{{ end }}
+    {{- end -}}
 
-		<section class="body">
+		<section class="post">
 			{{ .Content }}
 		</section>
-
-		<div class="post-tags">
-			{{ if ne .Type "page" }}
-				{{ if gt .Params.tags 0 }}
-					<ul class="tags">
-						{{ range .Params.tags }}
-						<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-						{{ end }}
-					</ul>
-				{{ end }}
-			{{ end }}
-		</div>
   </article>
 	</div>
-
-	{{ partial "post_footer.html" . }}
 
 	{{ partial "footer.html" . }}
   </div>

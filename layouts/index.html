@@ -8,16 +8,9 @@
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages  }}
 				<section class="post_listed">
-					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
-					<time class="post_time">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
-					<br><span class="description">
-						{{ if isset .Params "description" }}
-						{{ .Description }}
-						{{ else }}
-						{{ .Summary }}&hellip;
-						{{ end }}
-					</span><br/>
-				</section>
+					<time class="post_time">{{ dateFormat "01.02.06" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+					<a class="title" href="{{ .RelPermalink }}">{{.Title}}</a>
+        </section>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
 			{{ partial "footer.html" . }}

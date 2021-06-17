@@ -15,9 +15,11 @@
       <a href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
   </nav>
+  {{- if isset .Site.Menus "social" -}}
 	<nav id="social">
 		{{ range .Site.Menus.social }}
 			<a href="{{ .URL }}">{{ .Name }}</a>
 		{{ end }}
 	</nav>
+  {{- end -}}
 </div>
